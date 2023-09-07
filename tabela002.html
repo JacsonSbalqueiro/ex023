@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+            background-color: rgba(144, 144, 146, 0.932);
+
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -23,12 +30,18 @@
         .num{
             text-align: right;
         }
+        .coluna2{
+            width: 80px;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
-    ThEAD
+
+    CAPTION
+
+    THEAD
        tr, td, th
     TBODY
         tr, td, th
@@ -36,9 +49,12 @@
         tr, td, th
     -->
     <table>
+        <caption>
+            População dos estados do sudeste
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" class="coluna2">População</th>
         </thead>
         <tbody>
             <tr>
@@ -49,11 +65,19 @@
                 <td>Minas Gerais</td>
                 <td class="num">21 368 791</td>
             </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">4 018 650</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de abitantes</th>
-                <td class="num">67 287 840</td>
+                <th scope="row">Total de abitantes</th>
+                <td class="num">88 571 433</td>
             </tr>
         </tfoot>
     </table>
