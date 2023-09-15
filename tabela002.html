@@ -9,7 +9,8 @@
             font-size: 1.3em;
             font-weight: bolder;
             padding: 8px;
-            background-color: rgba(144, 144, 146, 0.932);
+            background-color: cadetblue;
+            color: white;
 
         }
         body{
@@ -26,6 +27,10 @@
         thead, tfoot{
             background-color: cadetblue;
             color: white;
+        }
+        tbody > tr:nth-child(2n) { /* poderia ser 2n-1 para
+            começar da primeira linha */
+            background-color: rgba(118, 180, 182, 0.582);
         }
         .num{
             text-align: right;
